@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func keyPressed(_ sender: UIButton) {
-        playSound(soundName: "Sounds/C");
+        playSound(soundName: "C");
     }
 
     func playSound(soundName: String) {
