@@ -19,10 +19,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func keyPressed(_ sender: UIButton) {
-        playSound(soundName: "C");
+        playSound(soundName: sender.currentTitle);
     }
 
-    func playSound(soundName: String) {
+    func playSound(soundName: String!) {
         guard let url = Bundle.main.url(forResource: soundName, withExtension: "wav") else { return }
 
         do {
